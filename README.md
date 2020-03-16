@@ -64,11 +64,15 @@ For our data, Pipeline 4 was ranked the highest, based on our “Area under the 
 
 On the AutoAI Experiment page, there are a number of options available to get more details on how each pipeline performed.
 
-You can take a look at :
+![Pipeline Performance](readme_images/pipeline-performance.png)
 
-1. the Pipeline comparison,
-2. 
-3. 
+1. The Pipeline comparison shows different metrics for each pipeline.
+2. The > button provides more details about the selected pipeline.
+3. Clicking the pipeline name opens the Model Evaluation window for the pipeline.
+
+Inside the Model Evaluation window, there is a menu on the left that provides more metrics for the pipeline, such as: Confusion Matrix table or Feature Importance graph.
+
+![Model Evaluation Window](readme_images/model-evaluation-window.png)
 
 ## Deploy and test the model using Watson Machine Learning service
 
