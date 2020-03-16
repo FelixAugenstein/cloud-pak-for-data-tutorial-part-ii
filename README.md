@@ -106,6 +106,7 @@ To deploy the model, click the model name to open it.
 - Click Save to save the deployment.
 - Wait until Watson Studio sets the STATUS field to ‘ready’ or ‘DEPLOY_SUCCESS’.
 
+![Status Ready](readme_images/status-ready.png)
 
 ## If you have any questions just contact me
 
