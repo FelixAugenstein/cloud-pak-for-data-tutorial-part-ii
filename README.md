@@ -74,9 +74,20 @@ Inside the Model Evaluation window, there is a menu on the left that provides mo
 
 ![Model Evaluation Window](readme_images/model-evaluation-window.png)
 
+The AutoAI Experiment model feature might not provide the exact same set of classification approaches and evaluation metrics as you can get with a Jupyter Notebook, but it arrives at the result significantly faster, and with no programming required.
+
 ## Deploy and test the model using Watson Machine Learning service
 
-text
+Using the Machine Learning service of Watson Studio, you can deploy your model in three different ways: as a web service, as a batch program, or as a real-time streaming prediction. In this tutorial, we deploy it as a web service and then test it interactively.
+
+First, you must save the model.
+
+1. For the highest rated pipeline, click Save as model.
+2. Keep the default name, and click Save.
+
+![Save Model](readme_images/save-model.png)
+
+The model should then appear in your project Models section of the Assets tab for the project.
 
 ## If you have any questions just contact me
 
