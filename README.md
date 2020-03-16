@@ -110,7 +110,7 @@ To deploy the model, click the model name to open it.
 
 The model is now deployed and can be used for prediction. However, before using it in a production environment it might be worthwhile to test it using real data. Therefore we will use a JSON object. It’s the most convenient option to perform tests more than once (which is usually the case), and when a large set of feature values is needed.
 
-To make it easier for you, you can cut and paste the following sample JSON object, or use the code in the `test-model.json` file to use in the following steps:
+To make it easier for you, you can cut and paste the following sample JSON object - or use the code in the `test-model.json` file - to use in the following steps:
 
 ```
 {"input_data":[{"fields": ["state", "account length", "area code", "phone number", "international plan", "voice mail plan", "number vmail messages", "total day minutes", "total day calls", "total day charge", "total eve minutes", "total eve calls", "total eve charge", "total night minutes", "total night calls", "total night charge", "total intl minutes", "total intl calls", "total intl charge", "customer service calls"], "values": [["NY",161,415,"351-7269","no","no",0,332.9,67,56.59,317.8,97,27.01,160.6,128,7.23,5.4,9,1.46,4]]}]}
