@@ -31,6 +31,17 @@ The 4 parts of this tutorial are based on the [Learning path: Getting started wi
 - Select From Blank as the experiment type.
 - Enter an Asset Name, such as ‘customer-churn-manual’.
 - For the Machine Learning Service, select the Watson Machine Learning service that you previously created for the project. If you have not created one, please do so now. It is available in the IBM Cloud Catalog under the category AI.
+- Then click Create.
+
+![Create Experiment](readme_images/create-experiment.png)
+
+5. In the Add training data window:
+
+- Click Select from project.
+- Select the Kaggle data asset previously added to the project (e.g. customer-churn-analysis).
+- Click Select Asset.
+
+![Select from Project](readme_images/select-from-project.png)
 
 ## Run and train the model
 
