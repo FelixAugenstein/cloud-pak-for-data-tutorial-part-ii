@@ -89,6 +89,24 @@ First, you must save the model.
 
 The model should then appear in your project Models section of the Assets tab for the project.
 
+![Model in Assets Tab](readme_images/model-assets.png)
+
+To deploy the model, click the model name to open it.
+
+1. Select the Deployments tab.
+2. Click Add Deployment.
+
+![Add Deployment](readme_images/add-deployment.png)
+
+3. On the Create Deployment page:
+
+- Enter a Name for the deployment (for example, ‘customer-churn-manual-web-deployment’).
+- Keep the default Web service Deployment type setting.
+- Enter an optional Description.
+- Click Save to save the deployment.
+- Wait until Watson Studio sets the STATUS field to ‘ready’ or ‘DEPLOY_SUCCESS’.
+
+
 ## If you have any questions just contact me
 
 Felix Augenstein<br>
