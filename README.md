@@ -108,6 +108,30 @@ To deploy the model, click the model name to open it.
 
 ![Status Ready](readme_images/status-ready.png)
 
+The model is now deployed and can be used for prediction. However, before using it in a production environment it might be worthwhile to test it using real data. Therefore we will use a JSON object. It’s the most convenient option to perform tests more than once (which is usually the case), and when a large set of feature values is needed.
+
+To make it easier for you, you can cut and paste the following sample JSON object to use in the following steps:
+
+```
+{"input_data":[{"fields": ["state", "account length", "area code", "phone number", "international plan", "voice mail plan", "number vmail messages", "total day minutes", "total day calls", "total day charge", "total eve minutes", "total eve calls", "total eve charge", "total night minutes", "total night calls", "total night charge", "total intl minutes", "total intl calls", "total intl charge", "customer service calls"], "values": [["NY",161,415,"351-7269","no","no",0,332.9,67,56.59,317.8,97,27.01,160.6,128,7.23,5.4,9,1.46,4]]}]}
+```
+
+To test the model at run time:
+
+1. Select the deployment that you just created by clicking the deployment name (for example, ‘customer-churn-manual-web-deployment’).
+
+![Select Deployment](readme_images/select-deployment.png)
+
+2. This opens a new page showing you an overview of the properties of the deployment (for example, name, creation date, and status).
+3. Select the Test tab.
+4. Select the file icon, which allows you to enter the values using JSON.
+5. Paste the sample JSON object into the Enter input data field.
+6. Click Predict to view the results.
+
+![Test Model](readme_images/test-model.png)
+
+The result of the prediction is given in terms of the probability that the customer will churn (True) or not (False). You can try it with other values, for example, by substituting the values with values taken from the ‘customer-churn-kaggle.csv’ file. Another test would be to change the phone number to something like “XYZ” and then run the prediction again. The result of the prediction should be the same, which indicates that the feature is not a factor in the prediction.
+
 ## If you have any questions just contact me
 
 Felix Augenstein<br>
