@@ -38,14 +38,23 @@ The 4 parts of this tutorial are based on the [Learning path: Getting started wi
 5. In the Add training data window:
 
 - Click Select from project.
-- Select the Kaggle data asset previously added to the project (e.g. customer-churn-analysis).
+- Select the Kaggle data asset previously added to the project (e.g. customer-churn-analysis, don't select any shaped data assets).
 - Click Select Asset.
 
 ![Select from Project](readme_images/select-from-project.png)
 
 ## Run and train the model
 
-text
+From the Configure AutoAI experiment window:
+
+1. In the Select column to predict box, select churn.
+
+![Select Prediction Column](readme_images/prediction-column.png)
+
+2. Keep the default prediction type of Binary Classification, and the optimized metric of ROC AUC (Receiver Operating Characteristics / Area Under Curve).
+3. Click Run experiment.
+
+As the experiment is run, you see a pipeline of steps at the top of the page. After it finishes, a list of completed models is listed at the bottom of the panel, in order of accuracy.
 
 ## Evaluate the model performance
 
