@@ -16,6 +16,34 @@ This tutorial consists of 4 parts, you can start with part I or any other part, 
 [Part III](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio-part-iii/)<br>
 [Part IV](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio-part-iv/)
 
+The 4 parts of this tutorial are based on the [Learning path: Getting started with Watson Studio](https://developer.ibm.com/series/learning-path-watson-studio/).
+
+## Create a new AutoAI model
+
+1. Select the Assets tab for your Watson Studio project.
+2. In the Asset tab, click the Add to Project command.
+
+![Auto AI Project](readme_images/auto-ai-project.png)
+
+3. Select the AutoAI Experiment asset type.
+4. In the Create an AutoAI experiment window:
+
+- Select From Blank as the experiment type.
+- Enter an Asset Name, such as ‘customer-churn-manual’.
+- For the Machine Learning Service, select the Watson Machine Learning service that you previously created for the project. If you have not created one, please do so now. It is available in the IBM Cloud Catalog under the category AI.
+
+## Run and train the model
+
+text
+
+## Evaluate the model performance
+
+text
+
+## Deploy and test the model using Watson Machine Learning service
+
+text
+
 ## If you have any questions just contact me
 
 Felix Augenstein<br>
