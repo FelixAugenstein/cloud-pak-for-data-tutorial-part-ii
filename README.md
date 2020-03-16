@@ -54,11 +54,15 @@ From the Configure AutoAI experiment window:
 2. Keep the default prediction type of Binary Classification, and the optimized metric of ROC AUC (Receiver Operating Characteristics / Area Under Curve).
 3. Click Run experiment.
 
-As the experiment is run, you see a pipeline of steps at the top of the page. After it finishes, a list of completed models is listed at the bottom of the panel, in order of accuracy.
+As the experiment is run, you see the different pipelines in the relationship map. After it finishes, a list of completed models is listed at the bottom of the panel, in order of accuracy. You can take a look at the Pipeline comparison or the Progress map, by clicking swap view.
+
+![Pipelines](readme_images/pipelines.png)
+
+For our data, Pipeline 4 was ranked the highest, based on our “Area under the ROC Curve” (ROC AUC) metric. After the AutoAI experiment completes, it is saved in the Watson Studio project. You can view it from the Assets tab under AutoAI experiments.
 
 ## Evaluate the model performance
 
-text
+On the AutoAI Experiment page, there are a number of options available to get more details on how each pipeline performed.
 
 ## Deploy and test the model using Watson Machine Learning service
 
