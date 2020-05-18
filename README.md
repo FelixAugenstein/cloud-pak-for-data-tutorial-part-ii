@@ -38,7 +38,7 @@ The 4 parts of this tutorial are based on the [Learning path: Getting started wi
 5. In the Add training data window:
 
 - Click Select from project.
-- Select the Kaggle data asset previously added to the project (e.g. customer-churn-analysis, don't select any shaped data assets).
+- Select the customer churn data asset previously added to the project (e.g. customer-churn-analysis, don't select any shaped data assets).
 - Click Select Asset.
 
 ![Select from Project](readme_images/select-from-project.png)
