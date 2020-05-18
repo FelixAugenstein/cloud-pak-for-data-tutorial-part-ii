@@ -51,7 +51,7 @@ From the Configure AutoAI experiment window:
 
 ![Select Prediction Column](readme_images/prediction-column.png)
 
-2. Keep the default prediction type of Binary Classification, and the optimized metric of ROC AUC (Receiver Operating Characteristics / Area Under Curve).
+2. Keep the default prediction type of Binary Classification, either the optimized metric of ROC AUC (Receiver Operating Characteristics / Area Under Curve) or Accuracy.
 3. Click Run experiment.
 
 As the experiment is run, you see the different pipelines in the relationship map. After it finishes, a list of completed models is listed at the bottom of the panel, in order of accuracy. You can also take a look at the Progress map, by clicking swap view.
