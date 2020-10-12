@@ -28,14 +28,14 @@ The 4 parts of this tutorial are based on the [Learning path: Getting started wi
 3. Select the AutoAI Experiment asset type.
 4. In the Create an AutoAI experiment window:
 
-- Select From Blank as the experiment type.
+- Select New or From Blank as the experiment type and NOT (Gallery) sample.
 - Enter an Asset Name, such as ‘customer-churn-manual’.
 - For the Machine Learning Service, select the Watson Machine Learning service that you previously created for the project. If you have not created one, please do so now. It is available in the IBM Cloud Catalog under the category AI.
 - Then click Create.
 
 ![Create Experiment](readme_images/create-experiment.png)
 
-5. In the Add training data window:
+5. In the Add data source window:
 
 - Click Select from project.
 - Select the customer churn data asset previously added to the project (e.g. customer-churn-analysis, don't select any shaped data assets).
@@ -45,9 +45,9 @@ The 4 parts of this tutorial are based on the [Learning path: Getting started wi
 
 ## Run and train the model
 
-From the Configure AutoAI experiment window:
+From the Configure details window:
 
-1. In the Select column to predict box, select churn.
+1. In the select prediction column, select churn.
 
 ![Select Prediction Column](readme_images/prediction-column.png)
 
