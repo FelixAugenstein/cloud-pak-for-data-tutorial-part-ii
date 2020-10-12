@@ -47,7 +47,7 @@ The 4 parts of this tutorial are based on the [Learning path: Getting started wi
 
 From the Configure details window:
 
-1. In the select prediction column, select churn.
+1. Under select prediction column, select churn.
 
 ![Select Prediction Column](readme_images/prediction-column.png)
 
