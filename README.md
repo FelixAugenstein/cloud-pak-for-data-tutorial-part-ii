@@ -94,6 +94,8 @@ The model should then appear in your project Models section of the Assets tab fo
 
 To deploy the model, click the model name to open it.
 
+Note: In the new Watson Studio version you have to promote your created model to a deployment space by clicking the button "Promote to deployment space". If you haven't created a depeloyment space you can do that [here](https://dataplatform.cloud.ibm.com/ml-runtime/spaces?context=cpdaas). You can access your deployment spaces from your [Cloud Pak for Data Homepage](https://dataplatform.cloud.ibm.com). Inside your deployment space you will see your promoted model under assets. Click "Deploy" and create a new online deployment. Skip the next steps and go directly to the deployments tab, where you can test your model.
+
 1. Select the Deployments tab.
 2. Click Add Deployment.
 
