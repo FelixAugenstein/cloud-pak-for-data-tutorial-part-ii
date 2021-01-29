@@ -1,5 +1,5 @@
 <h1 align="center" style="border-bottom: none;">:bar_chart: IBM Cloud Pak for Data: Part II</h1>
-<h3 align="center">In this hands-on tutorial you will build and evaluate machine learning models by using the AutoAI feature in IBM Cloud Pak for Data.</h3>
+<h3 align="center">In this hands-on tutorial you will build and evaluate machine learning models by using the AutoAI feature in Watson Studio.</h3>
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ The first 4 parts of this tutorial are based on the [Learning path: Getting star
 
 ## Create a new AutoAI model
 
-1. Select the Assets tab for your project.
+1. Select the Assets tab for your Watson Studio project.
 2. In the Asset tab, click the Add to Project command.
 
 ![Auto AI Project](readme_images/auto-ai-project.png)
@@ -59,7 +59,7 @@ As the experiment is run, you see the different pipelines in the relationship ma
 
 ![Pipelines](readme_images/pipelines.png)
 
-For our data, Pipeline 3 was ranked the highest, based on our Accuracy metric. After the AutoAI experiment completes, it is saved in the Cloud Pak for Data project. You can view it from the Assets tab under AutoAI experiments.
+For our data, Pipeline 3 was ranked the highest, based on our Accuracy metric. After the AutoAI experiment completes, it is saved in the Watson Studio project. You can view it from the Assets tab under AutoAI experiments.
 
 ## Evaluate the model performance
 
@@ -94,7 +94,7 @@ The model should then appear in your project Models section of the Assets tab fo
 
 To deploy the model, click the model name to open it.
 
-Note: If you haven't created a depeloyment space you can do that [here](https://dataplatform.cloud.ibm.com/ml-runtime/spaces?context=cpdaas).
+Note: In the new Watson Studio version you have to promote your created model to a deployment space by clicking the button "Promote to deployment space". If you haven't created a depeloyment space you can do that [here](https://dataplatform.cloud.ibm.com/ml-runtime/spaces?context=cpdaas). You can access your deployment spaces from your [Cloud Pak for Data Homepage](https://dataplatform.cloud.ibm.com). Inside your deployment space you will see your promoted model under assets. Click "Deploy" and create a new online deployment. Skip the next steps and go directly to the deployments tab, where you can test your model.
 
 1. Click Promote to deployment space.
 
@@ -115,7 +115,7 @@ Note: If you haven't created a depeloyment space you can do that [here](https://
 - Choose Online as Deployment Type.
 - Enter an optional Description.
 - Click Create to save the deployment.
-- Wait until Cloud Pak for Data sets the STATUS field to ‘Deployed’.
+- Wait until Watson Studio sets the STATUS field to ‘Deployed’.
 
 ![Status Ready](readme_images/status-ready.png)
 
