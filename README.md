@@ -1,5 +1,5 @@
-<h1 align="center" style="border-bottom: none;">:bar_chart: IBM Digital Tech Tutorial: Watson Studio Part II</h1>
-<h3 align="center">In this hands-on tutorial you will build and evaluate machine learning models by using the AutoAI feature in IBM Watson Studio.</h3>
+<h1 align="center" style="border-bottom: none;">:bar_chart: IBM Cloud Pak for Data: Part II</h1>
+<h3 align="center">In this hands-on tutorial you will build and evaluate machine learning models by using the AutoAI feature in IBM Cloud Pak for Data.</h3>
 
 ## Prerequisites
 
@@ -11,11 +11,11 @@
 ## Digital Tech Tutorial Watson Studio Part I to V
 
 This tutorial consists of 5 parts, you can start with part I or any other part, however, the necessary environment is set up in part I.<br>
-[Part I - data visualization, preparation, and transformation](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio)<br>
-[Part II - build and evaluate machine learning models by using the AutoAI](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio-part-ii/)<br>
-[Part III - graphically build and evaluate machine learning models by using the SPSS Modeler flow](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio-part-iii/)<br>
-[Part IV - set up and run Jupyter Notebooks to develop a machine learning model](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio-part-iv/)<br>
-[Part V - deploy a local app to test your model](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio-part-v/) 
+[Part I - data visualization, preparation, and transformation](https://github.com/FelixAugenstein/cloud-pak-for-data-tutorial)<br>
+[Part II - build and evaluate machine learning models by using the AutoAI](https://github.com/FelixAugenstein/cloud-pak-for-data-tutorial-part-ii)<br>
+[Part III - graphically build and evaluate machine learning models by using the SPSS Modeler flow](https://github.com/FelixAugenstein/cloud-pak-for-data-tutorial-part-iii)<br>
+[Part IV - set up and run Jupyter Notebooks to develop a machine learning model](https://github.com/FelixAugenstein/cloud-pak-for-data-tutorial-part-iv)<br>
+[Part V - deploy a local app to test your model](https://github.com/FelixAugenstein/cloud-pak-for-data-tutorial-part-v)
 
 The first 4 parts of this tutorial are based on the [Learning path: Getting started with Watson Studio](https://developer.ibm.com/series/learning-path-watson-studio/).
 
@@ -29,7 +29,7 @@ The first 4 parts of this tutorial are based on the [Learning path: Getting star
 3. Select the AutoAI Experiment asset type.
 4. In the Create an AutoAI experiment window:
 
-- Select New or From Blank as the experiment type and NOT (Gallery) sample.
+- New is automatically selected as the experiment type and NOT (Gallery) sample.
 - Enter an Asset Name, such as ‘customer-churn-manual’.
 - For the Machine Learning Service, select the Watson Machine Learning service that you previously created for the project. If you have not created one, please do so now. It is available in the IBM Cloud Catalog under the category AI.
 - Then click Create.
@@ -39,7 +39,7 @@ The first 4 parts of this tutorial are based on the [Learning path: Getting star
 5. In the Add data source window:
 
 - Click Select from project.
-- Select the customer churn data asset previously added to the project (e.g. customer-churn-analysis, don't select any shaped data assets).
+- Select the customer churn data asset previously added to the project (e.g. customer-churn-analysis-V2, don't select any shaped data assets).
 - Click Select Asset.
 
 ![Select from Project](readme_images/select-from-project.png)
@@ -52,14 +52,14 @@ From the Configure details window:
 
 ![Select Prediction Column](readme_images/prediction-column.png)
 
-2. Keep the default prediction type of Binary Classification, either the optimized metric of ROC AUC (Receiver Operating Characteristics / Area Under Curve) or Accuracy.
+2. Keep the default prediction type of Binary Classification and the optimized metric of Accuracy.
 3. Click Run experiment.
 
 As the experiment is run, you see the different pipelines in the relationship map. After it finishes, a list of completed models is listed at the bottom of the panel, in order of accuracy. You can also take a look at the Progress map, by clicking swap view.
 
 ![Pipelines](readme_images/pipelines.png)
 
-For our data, Pipeline 4 was ranked the highest, based on our “Area under the ROC Curve” (ROC AUC) metric. After the AutoAI experiment completes, it is saved in the Watson Studio project. You can view it from the Assets tab under AutoAI experiments.
+For our data, Pipeline 3 was ranked the highest, based on our Accuracy metric. After the AutoAI experiment completes, it is saved in the Watson Studio project. You can view it from the Assets tab under AutoAI experiments.
 
 ## Evaluate the model performance
 
@@ -83,8 +83,8 @@ Using the Machine Learning service of Watson Studio, you can deploy your model i
 
 First, you must save the model.
 
-1. For the highest rated pipeline, click Save as model.
-2. Keep the default name, and click Save.
+1. For the highest rated pipeline, click Save as.
+2. Keep the default choice to safe the model and the default name, and click Save.
 
 ![Save Model](readme_images/save-model.png)
 
@@ -96,18 +96,26 @@ To deploy the model, click the model name to open it.
 
 Note: In the new Watson Studio version you have to promote your created model to a deployment space by clicking the button "Promote to deployment space". If you haven't created a depeloyment space you can do that [here](https://dataplatform.cloud.ibm.com/ml-runtime/spaces?context=cpdaas). You can access your deployment spaces from your [Cloud Pak for Data Homepage](https://dataplatform.cloud.ibm.com). Inside your deployment space you will see your promoted model under assets. Click "Deploy" and create a new online deployment. Skip the next steps and go directly to the deployments tab, where you can test your model.
 
-1. Select the Deployments tab.
-2. Click Add Deployment.
+1. Click Promote to deployment space.
 
-![Add Deployment](readme_images/add-deployment.png)
+![Add Deployment1](readme_images/add-deployment1.png)
 
-3. On the Create Deployment page:
+2. Chose your deployment space or set up a New space.
+3. Click Promote.
 
-- Enter a Name for the deployment (for example, ‘customer-churn-manual-web-deployment’).
-- Keep the default Web service Deployment type setting.
+![Add Deployment2](readme_images/add-deployment2.png)
+
+3. Go to your deployment space under Assets and click on the deploy button next to your asset:
+
+![Deployment1](readme_images/deployment1.png)
+
+![Deployment2](readme_images/deployment2.png)
+
+- Enter a Name for the deployment (for example, ‘customer-churn-manual’).
+- Choose Online as Deployment Type.
 - Enter an optional Description.
-- Click Save to save the deployment.
-- Wait until Watson Studio sets the STATUS field to ‘ready’ or ‘DEPLOY_SUCCESS’.
+- Click Create to save the deployment.
+- Wait until Watson Studio sets the STATUS field to ‘Deployed’.
 
 ![Status Ready](readme_images/status-ready.png)
 
@@ -121,7 +129,7 @@ To make it easier for you, you can cut and paste the following sample JSON objec
 
 To test the model at run time:
 
-1. Select the deployment that you just created by clicking the deployment name (for example, ‘customer-churn-manual-web-deployment’).
+1. Select the deployment that you just created by clicking the deployment name (for example, ‘customer-churn-manual’).
 
 ![Select Deployment](readme_images/select-deployment.png)
 
