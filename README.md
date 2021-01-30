@@ -1,4 +1,4 @@
-<h1 align="center" style="border-bottom: none;">:bar_chart: IBM Cloud Pak for Data: Part II</h1>
+<h1 align="center" style="border-bottom: none;">:bar_chart: IBM Cloud Pak for Data Tutorial: Part II</h1>
 <h3 align="center">In this hands-on tutorial you will build and evaluate machine learning models by using the AutoAI feature in Watson Studio.</h3>
 
 ## Prerequisites
