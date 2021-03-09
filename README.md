@@ -28,7 +28,7 @@ The **CR**oss **I**ndustry **S**tandard **P**rocess for **D**ata **M**ining is a
 5. Evaluation - Which model is the most accurate? 
 6. Deployment - How to implement the model? 
 
-In this case we use AutoAI to nearly cover all phases of the CRISP-DM model. The business understanding is provided and the data understanding, preparation, modeling and evaluation are all performed by AutoAI. 
+In this case we use AutoAI to nearly cover all phases of the CRISP-DM model. The business understanding is provided (predict churns) and the data understanding, preparation, modeling and evaluation are all performed by AutoAI. 
 
 
 ## Create a new AutoAI model
