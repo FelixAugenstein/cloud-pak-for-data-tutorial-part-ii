@@ -85,7 +85,7 @@ On the AutoAI Experiment page, there are a number of options available to get mo
 1. The Pipeline comparison shows different metrics for each pipeline.
 2. Clicking the pipeline name opens the Model Evaluation window for the pipeline.
 
-Inside the Model Evaluation window, there is a menu on the left that provides more metrics for the pipeline, such as: Confusion Matrix table or Feature Importance graph.
+Inside the Model Evaluation window, there is a menu on the left that provides more metrics for the pipeline, such as: Confusion Matrix table or Feature Importance / summary graph.
 
 ![Model Evaluation Window](readme_images/model-evaluation-window.png)
 
@@ -93,9 +93,9 @@ The AutoAI Experiment model feature might not provide the exact same set of clas
 
 ## Deploy and test the model using Watson Machine Learning service
 
-Using the Machine Learning service of Watson Studio, you can deploy your model in three different ways: as a web service, as a batch program, or as a real-time streaming prediction. In this tutorial, we deploy it as a web service and then test it interactively.
+We can save as a Watson Machine Learning model asset that we can test with new data and deploy to generate predictions, or as a Notebook if we want to view the code that created this model pipeline or interact with with the model programatically.
 
-First, you must save the model.
+Now, you must save the model.
 
 1. For the highest rated pipeline, click Save as.
 2. Keep the default choice to safe the model and the default name, and click Save.
