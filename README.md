@@ -63,7 +63,7 @@ In this case we use AutoAI to nearly cover all phases of the CRISP-DM model. The
 
 From the Configure details window:
 
-1. Under select prediction column, select churn.
+1. Under select prediction column, select churn (If you get asked for a time series forecast, you can select no).
 
 ![Select Prediction Column](readme_images/prediction-column.png)
 
