@@ -98,7 +98,7 @@ We can save as a Watson Machine Learning model asset that we can test with new d
 Now, you must save the model.
 
 1. For the highest rated pipeline, click Save as.
-2. Keep the default choice to safe the model and the default name, and click Save.
+2. Keep the default choice to safe the model and the default name, and click Create.
 
 ![Save Model](readme_images/save-model.png)
 
