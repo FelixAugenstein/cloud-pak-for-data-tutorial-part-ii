@@ -37,7 +37,7 @@ In this case we use AutoAI to nearly cover all phases of the CRISP-DM model. The
 ## Create a new AutoAI model
 
 1. Select the Assets tab for your Watson Studio project.
-2. In the Asset tab, click the Add to Project command.
+2. In the Asset tab, click the Add to Project button.
 
 ![Auto AI Project](readme_images/auto-ai-project.png)
 
