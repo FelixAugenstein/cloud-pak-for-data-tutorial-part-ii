@@ -156,10 +156,3 @@ To test the model at run time:
 ![Test Model](readme_images/test-model.png)
 
 The result of the prediction is given in terms of the probability that the customer will churn (True) or not (False). You can try it with other values, for example, by substituting the values with values taken from the ‘customer-churn-kaggle.csv’ file. Another test would be to change the phone number to something like “XYZ” and then run the prediction again. The result of the prediction should be the same, which indicates that the feature is not a factor in the prediction.
-
-## If you have any questions just contact me
-
-Felix Augenstein<br>
-Digital Tech Ecosystem & Developer Representative @IBM<br>
-Twitter: [@F_Augenstein](https://twitter.com/F_Augenstein)<br>
-LinkedIn: [linkedin.com/in/felixaugenstein](https://www.linkedin.com/in/felixaugenstein/)
