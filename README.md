@@ -39,7 +39,7 @@ In this case we use AutoAI to nearly cover all phases of the CRISP-DM model. The
 1. Select the Assets tab for your Watson Studio project.
 2. In the Asset tab, click the Add to Project button.
 
-![Auto AI Project](readme_images/auto-ai-project.png)
+![Auto AI Project](readme_images/select-Auto-AI.png)
 
 3. Select the AutoAI Experiment asset type.
 4. In the Create an AutoAI experiment window:
@@ -153,6 +153,6 @@ To test the model at run time:
 5. Paste the sample JSON object into the Enter input data field.
 6. Click Predict to view the results.
 
-![Test Model](readme_images/test-model.png)
+![Test Model](readme_images/Auto-AI-insert-json.png)
 
 The result of the prediction is given in terms of the probability that the customer will churn (True) or not (False). You can try it with other values, for example, by substituting the values with values taken from the ‘customer-churn-kaggle.csv’ file. Another test would be to change the phone number to something like “XYZ” and then run the prediction again. The result of the prediction should be the same, which indicates that the feature is not a factor in the prediction.
